@@ -17,28 +17,28 @@
 .button-primary, .button.danger {
     color: #fff;
 }
-.button.primary {
+.button.primary, button:has(span.button.primary) {
     background-color: rgb(26, 115, 232);
     color: #fff;
 }
-.button.primary:hover {
+.button.primary:hover, button:has(span.button.primary):hover {
     background-color: rgb(25, 103, 210);
 }
 
-.button.secondary {
+.button.secondary, button:has(span.button.secondary) {
     color: #7E8299;
     background-color: #F3F6F9;
     border: #F3F6F9;
 }
-.button.secondary:hover {
+.button.secondary:hover, button:has(span.button.secondary):hover {
     background-color: #d7dae7;
     border: #d7dae7;
 }
 
-.button.danger {
+.button.danger, button:has(span.button.danger) {
     background-color: #F64E60;
 }
-.button.danger:hover {
+.button.danger:hover, button:has(span.button.danger):hover {
     background-color: #EE2D41;
 }
 
@@ -47,12 +47,12 @@
     gap: 0;
 }
 
-.group .button:first-child {
+.group .button:first-child, .group button:has(span.button):first-child {
     margin-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-.group .button:last-child {
+.group .button:last-child, .group button:has(span.button):last-child {
     margin-right: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
