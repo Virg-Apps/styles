@@ -1,4 +1,4 @@
-.button, .nav {
+.button, .nav, button:has(span.button) {
     border: 0;
     border-radius: 6px;
     box-sizing: border-box;
