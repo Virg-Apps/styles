@@ -1,0 +1,7 @@
+.dropdown-trigger:has(> .row-menu-trigger) {
+    background-color: #fff;
+    opacity: 0.4;
+}
+tr:hover .dropdown-trigger:has(> .row-menu-trigger) {
+    opacity: 1;
+}

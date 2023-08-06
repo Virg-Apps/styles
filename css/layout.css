@@ -1,0 +1,38 @@
+body > div {
+    display: grid;
+    grid-template-rows: 1fr 0fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:    "nav    main"
+                            "footer footer";
+    height: 100vh;
+}
+
+body > div > header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+body > div > nav {
+    grid-area: nav;
+}
+
+body > div > main {
+    padding: 60px 0.8rem 2rem 0.8rem;
+    grid-area: main;
+}
+
+body > div > footer {
+    grid-area: footer;
+}
+
+
+header .navbar-menu {
+    padding: 0 1rem;
+}
+
+header .navbar-menu .dropdown-trigger {
+    border: none;
+}

@@ -1,0 +1,50 @@
+*.inline > .text-field,
+.text-field.inline {
+    display: flex;
+}
+
+input, textarea, select {
+    outline: 2px solid transparent;
+    background: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding: 8px;
+    transition: box-shadow .15s;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 0px 1px inset;
+}
+input, select {
+    max-height: 36px;
+}
+input:focus, textarea:focus, select:focus,
+input:active, textarea:active, select:active {
+    box-shadow: rgba(26, 115, 232, 0.65) 0px 0px 0px 2px inset;
+    transition: box-shadow .15s;
+}
+label > input, label > select, label > textarea {
+    display: block;
+}
+
+.icon-left {
+    position: relative;
+}
+.icon-left input {
+    padding-left: 2rem;
+}
+.icon-left > svg {
+    position: absolute;
+    left: 0.5rem;
+    top: 0.6rem;
+    opacity: 0.6;
+}
+
+input.small, select.small, textarea.small {
+    font-size: 0.8rem;
+}
