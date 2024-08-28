@@ -48,3 +48,7 @@ label > input, label > select, label > textarea {
 input.small, select.small, textarea.small {
     font-size: 0.8rem;
 }
+
+label > input[type="checkbox"] {
+    margin-right: 0.2rem;
+}
